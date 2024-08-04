@@ -7,7 +7,7 @@
 - **Objective**: Analyze a dataset containing information about movies to extract insights, such as the most popular genres, average ratings, and trends over time.
 - **Dataset**: We will use a CSV file containing columns like `title`, `genre`, `release_year`, `rating`, and `budget`.
 
----
+
 
 ## 1. Introduction to Python
 
