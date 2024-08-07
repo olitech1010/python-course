@@ -108,17 +108,26 @@ my_list = [1,4,67,45,7,4,7,8,5,42,1,7,9]
 
 #functions
 
-def emoji_converter(message):
-    words = message.split(" ")
-    output = ""
-    emojis = {
-    "sad" : "🥲",
-    "happy" : "😅"
-    }
-    for word in words:
-        output += emojis.get(word, word) + " "
-    return output
+# def emoji_converter(message):
+#     words = message.split(" ")
+#     output = ""
+#     emojis = {
+#     "sad" : "🥲",
+#     "happy" : "😅"
+#     }
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
 
 
-message = input("Type message : ")
-print(emoji_converter(message=message))
+# message = input("Type message : ")
+# print(emoji_converter(message=message))
+
+try:
+    number = int(input("Enter a number to divide by itself: "))
+    print(number/number)
+except ValueError:
+    print("Please enter a number")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+    
