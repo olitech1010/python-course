@@ -71,24 +71,37 @@ my_list = [1,4,67,45,7,4,7,8,5,42,1,7,9]
 
 #Dictionary 
 
-custumer ={
-    "id": 123546,
-    "name": "Stephen Donkor",
-    "is_verified": True,
-}
+# custumer ={
+#     "id": 123546,
+#     "name": "Stephen Donkor",
+#     "is_verified": True,
+# }
 
-print(custumer.get("name"))
+# print(custumer.get("name"))
 
-#digits to word converter
+# #digits to word converter
 
-digits_mapping = {
-    "1": "one",
-    "2": "two",
-    "3": "three"
-}
+# digits_mapping = {
+#     "1": "one",
+#     "2": "two",
+#     "3": "three"
+# }
 
+# output = ""
+# number = input("Enter number: ")
+# for ch in number:
+#     output += digits_mapping.get(ch, "null") + " "
+# print(output)
+
+#split
+message = input("Type message : ")
+words = message.split(" ")
 output = ""
-number = input("Enter number: ")
-for ch in number:
-    output += digits_mapping.get(ch, "null") + " "
+emojis = {
+    "sad" : "🥲",
+    "happy" : "😅"
+}
+
+for word in words:
+    output += emojis.get(word, word) + " "
 print(output)
