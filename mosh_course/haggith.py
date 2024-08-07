@@ -69,4 +69,26 @@ my_list = [1,4,67,45,7,4,7,8,5,42,1,7,9]
 #     print(values)
 # print(x*y*z)
 
+#Dictionary 
 
+custumer ={
+    "id": 123546,
+    "name": "Stephen Donkor",
+    "is_verified": True,
+}
+
+print(custumer.get("name"))
+
+#digits to word converter
+
+digits_mapping = {
+    "1": "one",
+    "2": "two",
+    "3": "three"
+}
+
+output = ""
+number = input("Enter number: ")
+for ch in number:
+    output += digits_mapping.get(ch, "null") + " "
+print(output)
