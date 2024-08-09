@@ -130,4 +130,9 @@ my_list = [1,4,67,45,7,4,7,8,5,42,1,7,9]
 #     print("Please enter a number")
 # except ZeroDivisionError:
 #     print("Cannot divide by zero")
-    
+
+def unit_converter(mm):
+    to_cm = mm * 100
+    return to_cm
+
+print(unit_converter(45))
